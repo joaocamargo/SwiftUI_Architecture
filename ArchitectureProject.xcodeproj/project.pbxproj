@@ -16,6 +16,17 @@
 		05768270264871ED006F6DAE /* EmojiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576826F264871ED006F6DAE /* EmojiList.swift */; };
 		0576827326487386006F6DAE /* EmojiDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827226487386006F6DAE /* EmojiDataModel.swift */; };
 		0576827526487888006F6DAE /* AddNewEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827426487888006F6DAE /* AddNewEmojiView.swift */; };
+		057682772648916B006F6DAE /* SmileyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057682762648916B006F6DAE /* SmileyListView.swift */; };
+		0576827926489262006F6DAE /* SmileyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827826489262006F6DAE /* SmileyDetailView.swift */; };
+		0576827C26494ABD006F6DAE /* PresentationOptionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827B26494ABD006F6DAE /* PresentationOptionListView.swift */; };
+		0576827E26494C12006F6DAE /* PopOverExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827D26494C12006F6DAE /* PopOverExample.swift */; };
+		0576828026494C27006F6DAE /* AlertExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576827F26494C27006F6DAE /* AlertExamples.swift */; };
+		0576828226494C3C006F6DAE /* ActionSheetExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576828126494C3C006F6DAE /* ActionSheetExamples.swift */; };
+		0576828426494C58006F6DAE /* ModalPresentationExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576828326494C58006F6DAE /* ModalPresentationExamples.swift */; };
+		05768287264957C6006F6DAE /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05768286264957C6006F6DAE /* MasterView.swift */; };
+		05768289264959B1006F6DAE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05768288264959B1006F6DAE /* NavigationController.swift */; };
+		0576828B264959F2006F6DAE /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576828A264959F2006F6DAE /* FirstDetailView.swift */; };
+		0576828D26495A0F006F6DAE /* SecondDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576828C26495A0F006F6DAE /* SecondDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +41,17 @@
 		0576826F264871ED006F6DAE /* EmojiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiList.swift; sourceTree = "<group>"; };
 		0576827226487386006F6DAE /* EmojiDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDataModel.swift; sourceTree = "<group>"; };
 		0576827426487888006F6DAE /* AddNewEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEmojiView.swift; sourceTree = "<group>"; };
+		057682762648916B006F6DAE /* SmileyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyListView.swift; sourceTree = "<group>"; };
+		0576827826489262006F6DAE /* SmileyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyDetailView.swift; sourceTree = "<group>"; };
+		0576827B26494ABD006F6DAE /* PresentationOptionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationOptionListView.swift; sourceTree = "<group>"; };
+		0576827D26494C12006F6DAE /* PopOverExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverExample.swift; sourceTree = "<group>"; };
+		0576827F26494C27006F6DAE /* AlertExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExamples.swift; sourceTree = "<group>"; };
+		0576828126494C3C006F6DAE /* ActionSheetExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetExamples.swift; sourceTree = "<group>"; };
+		0576828326494C58006F6DAE /* ModalPresentationExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationExamples.swift; sourceTree = "<group>"; };
+		05768286264957C6006F6DAE /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		05768288264959B1006F6DAE /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		0576828A264959F2006F6DAE /* FirstDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		0576828C26495A0F006F6DAE /* SecondDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +84,13 @@
 		05768259264869DC006F6DAE /* ArchitectureProject */ = {
 			isa = PBXGroup;
 			children = (
+				05768285264957A4006F6DAE /* Advanced Navigation */,
 				0576825A264869DC006F6DAE /* AppDelegate.swift */,
 				0576825C264869DC006F6DAE /* SceneDelegate.swift */,
 				0576825E264869DC006F6DAE /* ContentView.swift */,
 				0576826E264871C2006F6DAE /* ContentViews */,
 				05768260264869E1006F6DAE /* Assets.xcassets */,
+				0576827A26494A8C006F6DAE /* Presentation */,
 				0576827126487371006F6DAE /* View model */,
 				05768265264869E1006F6DAE /* LaunchScreen.storyboard */,
 				05768268264869E1006F6DAE /* Info.plist */,
@@ -88,6 +112,8 @@
 			children = (
 				0576826F264871ED006F6DAE /* EmojiList.swift */,
 				0576827426487888006F6DAE /* AddNewEmojiView.swift */,
+				057682762648916B006F6DAE /* SmileyListView.swift */,
+				0576827826489262006F6DAE /* SmileyDetailView.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -98,6 +124,29 @@
 				0576827226487386006F6DAE /* EmojiDataModel.swift */,
 			);
 			path = "View model";
+			sourceTree = "<group>";
+		};
+		0576827A26494A8C006F6DAE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0576827B26494ABD006F6DAE /* PresentationOptionListView.swift */,
+				0576827D26494C12006F6DAE /* PopOverExample.swift */,
+				0576827F26494C27006F6DAE /* AlertExamples.swift */,
+				0576828126494C3C006F6DAE /* ActionSheetExamples.swift */,
+				0576828326494C58006F6DAE /* ModalPresentationExamples.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		05768285264957A4006F6DAE /* Advanced Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				05768286264957C6006F6DAE /* MasterView.swift */,
+				05768288264959B1006F6DAE /* NavigationController.swift */,
+				0576828A264959F2006F6DAE /* FirstDetailView.swift */,
+				0576828C26495A0F006F6DAE /* SecondDetailView.swift */,
+			);
+			path = "Advanced Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,11 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0576827E26494C12006F6DAE /* PopOverExample.swift in Sources */,
 				0576825B264869DC006F6DAE /* AppDelegate.swift in Sources */,
+				05768287264957C6006F6DAE /* MasterView.swift in Sources */,
+				0576828226494C3C006F6DAE /* ActionSheetExamples.swift in Sources */,
 				0576825D264869DC006F6DAE /* SceneDelegate.swift in Sources */,
+				0576827926489262006F6DAE /* SmileyDetailView.swift in Sources */,
+				0576828B264959F2006F6DAE /* FirstDetailView.swift in Sources */,
 				0576827326487386006F6DAE /* EmojiDataModel.swift in Sources */,
+				05768289264959B1006F6DAE /* NavigationController.swift in Sources */,
+				0576827C26494ABD006F6DAE /* PresentationOptionListView.swift in Sources */,
 				05768270264871ED006F6DAE /* EmojiList.swift in Sources */,
+				0576828D26495A0F006F6DAE /* SecondDetailView.swift in Sources */,
+				0576828426494C58006F6DAE /* ModalPresentationExamples.swift in Sources */,
+				057682772648916B006F6DAE /* SmileyListView.swift in Sources */,
 				0576825F264869DC006F6DAE /* ContentView.swift in Sources */,
+				0576828026494C27006F6DAE /* AlertExamples.swift in Sources */,
 				0576827526487888006F6DAE /* AddNewEmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

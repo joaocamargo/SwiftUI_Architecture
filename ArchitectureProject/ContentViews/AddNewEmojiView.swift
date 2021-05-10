@@ -27,7 +27,7 @@ struct AddNewEmojiView: View {
             }){
                 Text("add")
             }
-        }.padding()
+        }.padding().frame(minWidth: 100)
     }
 }
 

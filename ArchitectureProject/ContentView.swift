@@ -16,59 +16,39 @@ private let dateFormatter: DateFormatter = {
 
 struct ContentView: View {
     
+    @EnvironmentObject var navigationController: NavigationController
+
+    
     @State private var dates = [Date]()
+    @State private var selection: Int = 0
     
     var body: some View {
-        EmojiList()
-//        NavigationView {
-//            MasterView(dates: $dates).navigationBarTitle(Text("Master"))
-//                .navigationBarItems(leading: EditButton(),
-//                                    trailing: Button (action: {
-//                                        withAnimation {
-//                                            self.dates.insert(Date(), at: 0)
-//                                        }
-//                                    }) {Image(systemName: "plus")}
-//                )
-//            DetailView()
-//        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+        TabView(selection: $navigationController.selection) {
+            
+            EmojiList().tag(0).tabItem {
+                Image(systemName: "circle")
+                Text("Emoji") }
+            
+            SmileyListView().tag(1).tabItem {
+                Image(systemName: "square")
+                Text("Smiley") }
+            
+            PresentationOptionListView().tag(2).tabItem {
+                Image(systemName: "pencil")
+                Text("pop overs") }
+            
+            MasterView().tag(3).tabItem {
+                Image(systemName: "star")
+               Text("Navigation") }
+            
+        }.accentColor(Color.green)
+
         
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(NavigationController())
     }
 }
-
-
-//struct MasterView: View {
-//    @Binding var dates: [Date]
-//
-//    var body: some View {
-//        List {
-//            ForEach(dates, id: \.self) { date in
-//                NavigationLink(
-//                    destination: DetailView(selectedDate: date)) {
-//                    Text("\(date, formatter: dateFormatter)")
-//                }
-//            }.onDelete { indices in
-//                indices.forEach { self.dates.remove(at: $0)}
-//            }
-//        }
-//    }
-//}
-//
-//struct DetailView: View {
-//    var selectedDate: Date?
-//
-//    var body: some View  {
-//        Group {
-//            if selectedDate != nil {
-//                Text("\(selectedDate!,formatter: dateFormatter)")
-//            } else {
-//                Text("detail view content goes here")
-//            }
-//        }.navigationBarTitle(Text("Detail"))
-//    }
-//}

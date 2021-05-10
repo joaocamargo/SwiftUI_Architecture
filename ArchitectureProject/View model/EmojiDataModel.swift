@@ -12,6 +12,8 @@ class EmojiDataModel: ObservableObject {
     
     @Published var emojis = ["🍓","🥑","🥭","🧇","🥐"]
     
+    @Published var smileys = ["😃","😄","😁","😆","😅","😂","🤣","🥲","☺️","😊","😇"]
+    
     func delete(indices: IndexSet) {
         for index in indices.reversed() {
             emojis.remove(at: index)
